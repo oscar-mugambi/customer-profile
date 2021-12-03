@@ -1,38 +1,132 @@
-.App {
-  text-align: center;
+:root {
+  --primaryColor: left;
+  --border: 1px solid #535c686e;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+* {
+  box-sizing: border-box;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.customer-profile {
   display: flex;
+  padding: 10px;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  background-color: rgb(241, 241, 241);
 }
 
-.App-link {
-  color: #61dafb;
+.customer-profile h3 {
+  margin: 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.average-nps {
+  display: flex;
+  border: var(--border);
+  padding: 1rem;
+  width: fit-content;
+  margin-bottom: 2rem;
+  background-color: #fff;
+  border-radius: 6px;
+}
+
+.icon {
+  height: 50px;
+  width: 50px;
+  background-color: black;
+}
+
+.nps-text {
+  margin: auto 0 auto 1rem;
+}
+.top-text {
+  display: block;
+  font-weight: 400;
+  color: #535c68;
+}
+
+.bottom-text {
+  font-weight: 600;
+}
+
+.customer-information {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid #535c686e;
+  padding: 1rem;
+  margin-bottom: 2rem;
+  background-color: #fff;
+  border-radius: 6px;
+}
+
+.customer-information__header {
+  color: #3b3b3d;
+}
+
+.transaction-details {
+  border: 1px solid #535c686e;
+  padding: 1rem;
+  margin-bottom: 2rem;
+}
+
+.transaction-details__header.rule {
+  margin-bottom: 1rem;
+}
+
+.transaction-info {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.breakdown {
+  border: 2px solid gray;
+  padding: 1rem 1rem 4rem;
+  background-color: rgb(140, 140, 192);
+}
+
+.transaction-charts {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1.5rem;
+  gap: 4rem 1rem;
+  flex-wrap: wrap;
+}
+
+.chart {
+  height: 500px;
+  width: 48%;
+  background-color: black;
+}
+
+.transaction-details-two {
+  margin-top: 2rem;
+}
+
+.custom-attributes,
+.custom-events {
+  border: 1px solid #535c686e;
+  padding: 1rem;
+  margin-bottom: 2rem;
+}
+
+.custom-attributes-header,
+.custom-events-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.attribute-cards,
+.attribute-events {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+
+.attribute-card,
+.attribute-event {
+  width: 22%;
+  height: 50px;
+  background-color: blue;
 }
